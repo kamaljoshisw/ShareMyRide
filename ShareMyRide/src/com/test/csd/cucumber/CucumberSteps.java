@@ -1,4 +1,4 @@
-package test1.csd.steps;
+package com.test.csd.cucumber;
 
 
 import com.test.csd.main.PostRideBean;
