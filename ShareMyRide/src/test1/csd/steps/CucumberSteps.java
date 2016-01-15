@@ -1,6 +1,5 @@
 package test1.csd.steps;
 
-import org.testng.Assert;
 
 import com.test.csd.main.PostRideBean;
 import com.test.csd.main.Publisher;
@@ -43,7 +42,7 @@ public class CucumberSteps {
 			msg= publisher.submit(bean);
 		}
 		
-		Assert.assertEquals(arg1, msg);
+		org.junit.Assert.assertEquals(arg1, msg);
 	}
 
 	@Given("^employee Person No. is (\\d+) , Phone No. is (\\d+), Email Id is \"([^\"]*)\" , origin is \"([^\"]*)\", destination is \"([^\"]*)\", Ride Type is \"([^\"]*)\", Seats Offered is (\\d+), Start Time is \"([^\"]*)\"$")
